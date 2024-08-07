@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication app</title>
+  </head>
+  <body>
+    <div id="app">
+      <h3 id="user">Welcome to Our Platform!</h3>
+      
+      <div class="form-container">
+        <form id="sign_up_form" class="form">
+          <h2>Create Account</h2>
+          <div class="input-container">
+            <i class="material-icons">email</i>
+            <input type="email" id="signup-email" placeholder="Email" required />
+          </div>
+          <div class="input-container">
+            <i class="material-icons">lock</i>
+            <input type="password" id="signup-password" placeholder="Password" required />
+          </div>
+          <div class="input-container">
+            <i class="material-icons">lock</i>
+            <input type="password" id="signup-password-confirm" placeholder="Confirm Password" required />
+          </div>
+          <button type="submit" id="sign_up_button">Sign Up</button>
+        </form>
+
+        <form id="sign_in_form" class="form">
+          <h2>Existing Users</h2>
+          <div class="input-container">
+            <i class="material-icons">email</i>
+            <input type="email" id="signin-email" placeholder="Email" required />
+          </div>
+          <div class="input-container">
+            <i class="material-icons">lock</i>
+            <input type="password" id="signin-password" placeholder="Password" required />
+          </div>
+          <button type="submit" id="login_button">Log In</button>
+        </form>
+      </div>
+
+      <button id="sign_out">Logout</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
